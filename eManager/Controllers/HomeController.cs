@@ -10,7 +10,7 @@ namespace eManager.Controllers
     {
         public ActionResult Index()
         {
-            vieg
+            ViewBag.test = "asd";
             return View();
         }
 
