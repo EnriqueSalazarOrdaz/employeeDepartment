@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace eManager.Domain
 {
-    public class IDepartmentDataSource
+    public interface IDepartmentDataSource
     {
-        public IQueryable<Employee> Employees { get; }
-        public IQueryable<Deparment> Deparments { get; }
+        IQueryable<Employee> Employees { get; }
+        IQueryable<Deparment> Deparments { get; }
     }
 }

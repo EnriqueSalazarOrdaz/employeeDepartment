@@ -9,7 +9,7 @@ namespace eManager.Domain
     public class Employee
     {
         public virtual int id { get; set; }
-        public virtual int name { get; set; }
+        public virtual string name { get; set; }
 
     }
 }
