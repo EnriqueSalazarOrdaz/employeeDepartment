@@ -10,6 +10,7 @@ namespace eManager.Controllers
     {
         public ActionResult Index()
         {
+            vieg
             return View();
         }
 
