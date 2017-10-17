@@ -9,6 +9,10 @@ namespace eManager.Infraestructure
 {
     public class DeparmentDb : DbContext, IDepartmentDataSource
     {
+        public DeparmentDb() :base("DefaultConnection")
+        {
+
+        }
         public DbSet<Employee> Employees2 { get; set; }
         public DbSet<Deparment> Deparments2 { get; set; }
 
