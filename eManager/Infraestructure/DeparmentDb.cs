@@ -9,7 +9,7 @@ namespace eManager.Infraestructure
 {
     public class DeparmentDb : DbContext, IDepartmentDataSource
     {
-        public DeparmentDb() :base("DefaultConnection")
+        public DeparmentDb(): base("work")
         {
 
         }

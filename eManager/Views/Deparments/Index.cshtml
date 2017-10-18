@@ -6,28 +6,25 @@
 
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.name)
-        </th>
-        <th></th>
-    </tr>
+@Html.DisplayNameFor(model=>model.name)
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.name)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id })
-        </td>
-    </tr>
-}
+<table>
+    <thead>
 
+        <tr>
+            <td>hello from td</td>
+            <th>hello from th</th>
+            <td>hello from td</td>
+            <th>hello from th</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        @foreach (var department in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(m=>department.name)</td>
+            </tr>
+        }
+    </tbody>
 </table>

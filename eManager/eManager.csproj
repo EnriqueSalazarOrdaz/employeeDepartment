@@ -180,6 +180,7 @@
     <Compile Include="App_Start\StructuremapMvc.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DeparmentsController.cs" />
+    <Compile Include="Controllers\DepController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
@@ -259,6 +260,7 @@
     <Content Include="Views\Deparments\Details.cshtml" />
     <Content Include="Views\Deparments\Edit.cshtml" />
     <Content Include="Views\Deparments\Index.cshtml" />
+    <Content Include="Views\Dep\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
