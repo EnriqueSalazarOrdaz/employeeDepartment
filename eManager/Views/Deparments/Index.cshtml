@@ -1,15 +1,10 @@
 ﻿@model IEnumerable<eManager.Domain.Deparment>
 
 @{
-    ViewBag.Title = "View All Departments";
+    ViewBag.Title = "Index";
 }
-<h1>@ViewBag.Title</h1>
-<h2>Index</h2>
 
-@foreach (var deparment in Model)
-{
-    <li>@deparment.id @Html.ActionLink(deparment.name, "Details", "Deparments", new { deparment.id }, null) </li>
-}
+<h2>Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -34,4 +29,5 @@
         </td>
     </tr>
 }
+
 </table>
