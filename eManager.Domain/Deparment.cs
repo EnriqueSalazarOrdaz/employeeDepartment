@@ -10,6 +10,6 @@ namespace eManager.Domain
     {
         public virtual int id { get; set; }
         public virtual string name { get; set; }
-        public virtual ICollection<Employee> type { get; set; }
+        public virtual ICollection<Employee> Employees { get; set; }
     }
 }

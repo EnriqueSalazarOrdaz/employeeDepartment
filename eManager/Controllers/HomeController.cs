@@ -10,14 +10,14 @@ namespace eManager.Controllers
 {
     public class HomeController : Controller
     {
-        private IDepartmentDataSource _ds = new DeparmentDb();
-        public HomeController()
+        private IDepartmentDataSource _db;
+        public HomeController(IDepartmentDataSource db)
         {
-            
+            _db = db;
         }
         public ActionResult Index()
         {
-            var allDepartments=_ds.Deparments;
+            var allDepartments=_db.Deparments;
             ViewBag.test = "asd";
             return View(allDepartments);
         }

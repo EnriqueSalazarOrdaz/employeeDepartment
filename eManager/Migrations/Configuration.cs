@@ -15,17 +15,17 @@ namespace eManager.Migrations
 
         protected override void Seed(eManager.Infraestructure.DeparmentDb context)
         {
-            context.Employees2.AddOrUpdate(
+            context.Employees.AddOrUpdate(
                     emp=> emp.id,
-                    new Employee { name="Kike"},
-                    new Employee { name = "Sandy" },
-                    new Employee { name = "Jose" }
+                    new Employee() { name="Kike"},
+                    new Employee() { name = "Sandy" },
+                    new Employee() { name = "Jose" }
                 );
-            context.Deparments2.AddOrUpdate(
+            context.Deparments.AddOrUpdate(
                     dep=> dep.id,
-                    new Deparment { name="IT" },
-                    new Deparment { name="QFB"},
-                    new Deparment { name="human resources"}
+                    new Deparment () { name="IT" },
+                    new Deparment () { name="QFB"},
+                    new Deparment () { name="human resources"}
                 );
             //  This method will be called after migrating to the latest version.
 

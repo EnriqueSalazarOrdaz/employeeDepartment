@@ -13,14 +13,14 @@ namespace eManager.Infraestructure
         {
 
         }
-        public DbSet<Employee> Employees2 { get; set; }
-        public DbSet<Deparment> Deparments2 { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Deparment> Deparments { get; set; }
 
         IQueryable<Employee> IDepartmentDataSource.Employees
         {
             get
             {
-                return Employees2;
+                return Employees;
             }
         }
 
@@ -28,7 +28,7 @@ namespace eManager.Infraestructure
         {
             get
             {
-                return Deparments2;
+                return Deparments;
             }
         }
     }
