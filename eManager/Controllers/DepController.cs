@@ -22,5 +22,29 @@ namespace eManager.Controllers
 
             return View(_db.Deparments);
         }
-	}
+        [HttpPost]
+        public ActionResult Edit(int id)
+        {
+            var rw = _db.Deparments.FirstOrDefault(x => x.id==id);
+            return View();
+        }
+        [HttpGet]
+        public ActionResult Edit()
+        {
+
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Detail(int id,string asd)
+        {
+
+            return View();
+        }
+        [HttpGet]
+        public ActionResult Detail(int id)
+        {
+            var departDetail = _db.Deparments.Single(x=>x.id==id);
+            return View(departDetail);
+        }
+    }
 }
