@@ -4,6 +4,7 @@
     ViewBag.Title = "Detail";
 }
 
+<<<<<<< HEAD
 <h2>Detail</h2>
 
 <div>
@@ -24,3 +25,27 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+=======
+<h2>@Model.name</h2>
+
+
+
+@Html.ActionLink("Create an employee", "Create", "Employee", new { DeparmentId=Model.id},null)
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Employees)
+        {
+            <tr>
+                <td>@item.name</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+>>>>>>> d3e9d8716037ab45a3a5622008c49d0abc1fb6d3

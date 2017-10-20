@@ -31,5 +31,10 @@ namespace eManager.Infraestructure
                 return Deparments;
             }
         }
+
+        void IDepartmentDataSource.Save()
+        {
+            SaveChanges();
+        }
     }
 }

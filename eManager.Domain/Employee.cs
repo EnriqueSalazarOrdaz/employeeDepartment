@@ -13,6 +13,7 @@ namespace eManager.Domain
     {
         public virtual int id { get; set; }
         public virtual string name { get; set; }
+        public virtual DateTime? HireDate { get; set; }
 
     }
 }
